@@ -224,7 +224,7 @@ const AddPropertyForm: React.FC<AddPropertyFormProps> = ({ isOpen, onClose }) =>
             </button>
             <button
               type="submit"
-              className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
+              className="inline-flex items-center px-4 py-2 bg-lime-400 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
             >
               <Plus className="h-4 w-4 mr-2" />
               Add Property
