@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ onAddPropertyClick }) => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Mini Property Listing Dashboard
+              Real Estate Dashboard
             </h1>
           </div>
           
@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ onAddPropertyClick }) => {
             
             <button
               onClick={onAddPropertyClick}
-              className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-sm transition-colors duration-200"
+              className="inline-flex items-center px-4 py-2 bg-lime-400 hover:bg-blue-700 text-white font-medium rounded-lg shadow-sm transition-colors duration-200"
             >
               <Plus className="h-4 w-4 mr-2" />
               Add Property

@@ -35,7 +35,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property, onViewClick }) =>
           </div>
           <button
             onClick={() => onViewClick(property)}
-            className="inline-flex items-center px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
+            className="inline-flex items-center px-3 py-2 bg-lime-400 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
           >
             <Eye className="h-4 w-4 mr-1" />
             View
