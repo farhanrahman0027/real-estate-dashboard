@@ -23,18 +23,31 @@ export const PropertyProvider: React.FC<PropertyProviderProps> = ({ children }) 
     searchQuery: '',
   });
   const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem('darkMode');
-    return saved ? JSON.parse(saved) : false;
+    // Always start in light mode
+    return false;
   });
 
   useEffect(() => {
-    localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    // Save dark mode preference to localStorage
+    if (darkMode) {
+      localStorage.setItem('darkMode', 'true');
+    } else {
+      localStorage.setItem('darkMode', 'false');
+    }
+    
+    // Apply or remove dark class to html element
     if (darkMode) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
   }, [darkMode]);
+
+  // Initialize theme on component mount
+  useEffect(() => {
+    // Ensure we start in light mode
+    document.documentElement.classList.remove('dark');
+  }, []);
 
   const addProperty = (propertyData: Omit<Property, 'id' | 'createdAt'>) => {
     const newProperty: Property = {
