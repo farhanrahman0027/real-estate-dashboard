@@ -20,6 +20,25 @@ A modern, responsive React TypeScript application for managing property listings
 - **Form Validation**: Real-time validation with error handling
 - **Mock Data**: Pre-populated with sample property data
 
+## 📸 Screenshots
+
+Here are some preview images of the dashboard:
+
+### 🖥️ Light Mode - Dashboard View
+![Light Mode Dashboard](./public/images/lightmode.png)
+
+### 🌙 Dark Mode - Property Detail Modal
+![Dark Mode Modal](./public/images/darkmode.png)
+
+### ➕ Add Property Form
+![Add Property Form](./public/images/addproperty.png)
+
+### ➕ view Details
+![view Details](./public/images/propertyview.png)
+
+
+
+
 ## 🛠️ Tech Stack
 
 - **Frontend**: React 18 + TypeScript
