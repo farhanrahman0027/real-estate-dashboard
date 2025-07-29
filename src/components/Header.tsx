@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ onAddPropertyClick }) => {
           
           {/* Logo / Title */}
           <div className="flex justify-between items-center w-full sm:w-auto">
-            <h1 className="text-2xl font-bold text-lime-400 dark:text-white">
+            <h1 className="text-2xl font-bold text-lime-400 ">
               Real Estate Dashboard
             </h1>
           </div>
