@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { PropertyProvider } from './context/PropertyContext';
 import Header from './components/Header';
 import FilterBar from './components/FilterBar';
